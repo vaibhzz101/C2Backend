@@ -13,9 +13,9 @@ const port = process.env.port || 9090;
 const app = express();
 app.use(express.json());
 
-app.get("/", (res,req) =>{
-    res.send("welcome in Bloggging application")
-});
+app.get('/', (req,res)=>{
+    res.send("Welcome to blogApp")
+})
 
 app.use("/user", userRouter);
 
